@@ -1,0 +1,20 @@
+<%= @user.username %>
+
+<% @user.pins.each do |pin| %>
+
+<div class = "grid-item col-md-4 col-sm-3 col-xs-12">
+  <div class = "group">
+
+    <h4> <%= image_tag(pin.user.avatar.url(:thumb), :class => "img-circle" )%></h4>
+
+<h4>  <%= pin.description %></h4>
+  <%= image_tag(pin.pin_image.url(:medium)) %>
+<div class ="links">
+  <%= link_to 'Show', pin%>
+  <%= link_to 'Edit', edit_pin_path(pin) %>
+  <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
+</div>
+</div>
+
+<% end %>

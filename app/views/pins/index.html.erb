@@ -13,11 +13,18 @@
         <%= link_to 'Edit', edit_pin_path(pin) %>
         <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>
+<div class ="user">
+<p>  <%= pin.user.username %></p>
+  <%= link_to image_tag(pin.user.avatar.url(:thumb), :class => "img-circle size" ), user_path(pin.user.username)  %>
+</div>
+
 </div>
       </div>
   <% end %>
     </div>
 
+<div class ="row">
 <div class = "col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3">
 <%= link_to 'New Pin', new_pin_path, class: "btn btn-primary new", type:"button" %>
+</div>
 </div>
