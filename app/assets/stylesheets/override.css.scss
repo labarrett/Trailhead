@@ -8,6 +8,11 @@
 
 */
 
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
 .grid-item {
 margin-top: 20px;
 
@@ -30,5 +35,80 @@ h4 {
 }
 
 .size {
-  width: 40px; 
+  width: 40px;
 }
+
+
+//***Home Page***//
+
+.picheader {
+
+  text-align: center;
+  padding: 150px;
+  width: 100%;
+  background-color: #938083;
+}
+
+
+.pink {
+  text-align: center;
+  padding: 100px;
+  width: 100%;
+  background-color: #e99176;
+}
+
+.pink p{
+font-size: 20px;
+}
+
+.content {
+  width: 60%;
+  margin: auto;
+}
+
+.white{
+
+  text-align: center;
+  padding: 100px;
+  width: 100%;
+  color: #30788b;
+
+}
+
+.lightblue {
+
+  padding: 100px;
+  width: 100%;
+  background-color: #89c4d4;
+
+}
+
+.boxes {
+  margin-top: 5%;
+  margin: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+
+height: 250px;
+width: 250px;
+margin: 0px 25px 20px 0px;
+display: inline-block;;
+background-color: red;
+position: relative;
+}
+
+.yellow {
+position: absolute;
+bottom: 0px;
+height: 40px;
+width: 250px;
+background-color: #dbd77c;
+
+}
+
+
+
+//***********************//
