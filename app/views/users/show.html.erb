@@ -1,20 +1,43 @@
-<%= @user.username %>
-
 <% @user.pins.each do |pin| %>
+<div class ="picheader3">
+  <div class ="profile">
+
+    <p> <%= image_tag(pin.user.avatar.url(:medium), :class => "img-circle size2" )%></p>
+    <div class ="bio">
+  <h4 class ="username"> <%= pin.user.username %></h4>
+  <p class ="userbio"> <%= pin.user.bio %></p>
+</div>
+</div>
+</div>
+
+  </div>
+</div>
+
+<div class ="wrap">
+<div class ="pinbuttons">
+    <%= link_to 'New Pin', new_pin_path, class: "btn btn-primary new", type:"button" %>
+    <%= link_to 'My Views', new_pin_path, class: "btn btn-primary new", type:"button" %>
+  </div>
 
 <div class = "grid-item col-md-4 col-sm-3 col-xs-12">
   <div class = "group">
 
-    <h4> <%= image_tag(pin.user.avatar.url(:thumb), :class => "img-circle" )%></h4>
 
-<h4>  <%= pin.description %></h4>
-  <%= image_tag(pin.pin_image.url(:medium)) %>
-<div class ="links">
-  <%= link_to 'Show', pin%>
-  <%= link_to 'Edit', edit_pin_path(pin) %>
-  <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <div class ="pinimage">
+      <div class ="yellow2">
+         <h4 class ="pindescription">  <%= pin.title %></h4>
+           <p class ="size3"><%= link_to '', edit_pin_path(pin), class: "glyphicon glyphicon-pencil" %></p>
+          <p class ="size4"> <%= link_to '', pin, method: :delete, data: { confirm: 'Are you sure?' }, class: "glyphicon glyphicon-trash" %></p>
+       </div>
+      <%= link_to image_tag(pin.pin_image.url(:medium)), pin %>
+
+    </div>
+
+  </div>
+
 </div>
-</div>
-</div>
+
+
+  </div>
 
 <% end %>

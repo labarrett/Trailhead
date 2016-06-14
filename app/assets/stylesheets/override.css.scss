@@ -12,6 +12,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "lato";
 }
 .grid-item {
 margin-top: 20px;
@@ -26,35 +27,54 @@ margin-top: 20px;
 h4 {
   text-align: center;
 }
-.red {
-  background-color: red;
-}
+
 
 .new {
   margin-top: 50px;
 }
 
-.size {
-  width: 40px;
-}
 
 
 //***Home Page***//
 
 .picheader {
-
+  background: image-url('57.jpg') no-repeat;
+  background-size:cover;
+  background-position: 50% 80%;
   text-align: center;
-  padding: 150px;
+  padding: 180px;
   width: 100%;
   background-color: #938083;
+  margin-top: -50px;
+
 }
 
+.picheader h1 {
+  font-weight: lighter;
+  font-size: 60px;
+margin-top: 0px;
+padding-bottom: 20px;
+color: white;
+
+
+}
+
+.pindescription2 {
+  text-align: left;
+  margin-left: 15px;
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-top: 7px;
+}
 
 .pink {
   text-align: center;
-  padding: 100px;
+  height: 300px;
   width: 100%;
-  background-color: #e99176;
+  background-color: #ffffff;
+  margin-top: 18px;
 }
 
 .pink p{
@@ -69,7 +89,7 @@ font-size: 20px;
 .white{
 
   text-align: center;
-  padding: 100px;
+  padding: 50px;
   width: 100%;
   color: #30788b;
 
@@ -77,9 +97,33 @@ font-size: 20px;
 
 .lightblue {
 
+  background: image-url('photography.jpg') no-repeat;
+  background-size:cover;
+  background-position: center;
   padding: 100px;
   width: 100%;
   background-color: #89c4d4;
+  position: relative;
+
+}
+
+.lightblue p {
+  color: #ffffff;
+  font-size: 30px;
+  position: absolute;
+  top: 65px;
+  right: 18%;
+  padding: 18px;
+  border: solid white;
+  border-radius: 7px;
+
+}
+.darkblue {
+
+  padding: 50px;
+  width: 100%;
+  background-color: #30788b;
+    clear: both;
 
 }
 
@@ -90,15 +134,49 @@ font-size: 20px;
   margin-right: auto;
 }
 
-.box {
+.box1 {
 
+background: image-url('3.jpg') no-repeat;
+background-size:cover;
+background-position: center;
 height: 250px;
 width: 250px;
-margin: 0px 25px 20px 0px;
+margin: 0px 35px 20px 0px;
 display: inline-block;;
 background-color: red;
 position: relative;
 }
+
+
+.box2 {
+
+background: image-url('7.jpg') no-repeat;
+background-size:cover;
+background-position: center;
+height: 250px;
+width: 250px;
+margin: 0px 35px 20px 0px;
+display: inline-block;;
+background-color: red;
+position: relative;
+}
+
+.box3 {
+
+  background: image-url('80.jpg') no-repeat;
+  background-size:cover;
+  background-position: center;
+height: 250px;
+width: 250px;
+margin: 0px 35px 20px 0px;
+display: inline-block;;
+background-color: red;
+position: relative;
+}
+
+
+
+
 
 .yellow {
 position: absolute;
@@ -109,6 +187,274 @@ background-color: #dbd77c;
 
 }
 
+.red {
+  background: image-url('73.jpg') no-repeat;
+  background-size:contain;
+  background-position: center;
+width: 900px;
+height: 300px;
+margin: 0px auto 0px auto;
+position: relative;
+
+}
+
+.content {
+  text-align: left;
+  width: 98%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.insidered {
+
+  position: absolute;
+  width: 470px;
+  top: 50px;
+  right: 70px;
+
+}
+
+.color {
+  background-color: #e99176;
+  border-color: #e99176;
+
+
+}
+
+.colortwo {
+    color: #3d424e;
+}
 
 
 //***********************//
+
+
+
+
+
+
+//***Pin Index Page***//
+
+
+.wrap {
+
+  width: 80%;
+  margin: 80px auto 0 auto;
+
+}
+
+.wrap h1 {
+  text-align: center;
+}
+
+.picheader2 {
+  background: image-url('6.jpg') no-repeat;
+  background-size:cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px;
+  width: 100%;
+  background-color: #938083;
+  color: white;
+}
+
+.pinimage {
+
+  position: relative;
+  margin-left: 20px;
+  margin-top: 50px;
+
+}
+
+
+.yellow2 {
+position: absolute;
+bottom: -40px;
+height: 45px;
+width: 300px;
+background-color: #dbd77c;
+
+}
+
+.pindescription {
+  text-align: left;
+  margin-left: 15px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.size {
+  width: 35px;
+  position: absolute;
+  right: 14px;
+  top: 4px;
+}
+
+
+//***********************//
+
+
+//USER SHOW PAGE//
+
+
+.picheader3 {
+
+  background-size:cover;
+  background-position: center;
+  text-align: center;
+  padding: 80px;
+  width: 100%;
+  background-color: #00d990;
+  color: white;
+}
+
+.profile {
+
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.size2 {
+  width: 200px;
+  float: left;
+  margin-left: 20%;
+
+}
+
+.bio {
+  overflow: hidden;
+  width: 50%;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.username {
+  font-size: 20px;
+text-transform: uppercase;
+  float: left;
+}
+
+.userbio {
+  float:left;
+  text-align: left;
+  font-size: 15px;
+}
+
+
+.size4 {
+  width: 35px;
+  position: absolute;
+  right: -8px;
+  top: 12px;
+  color: white;
+
+}
+.size3 {
+  width: 35px;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  color: white;
+
+}
+
+.pinbuttons {
+
+
+  margin-left: 40px;
+  margin-top: -40px;
+
+}
+
+//***********************//
+
+
+
+//***PIN SHOW PAGE********//
+
+.picbackground {
+
+  width: 100%;
+  background-color: red;
+}
+
+
+.background {
+  width: 100%;
+  margin-top: -120px;
+}
+
+.size5 {
+  width: 150px;
+}
+
+.pinprofile {
+  text-align: center;
+  width: 35%;
+  border-right: solid 2px #dbd77c;
+  float:left;
+  margin-right: 5px;
+}
+
+.pinprofile h3 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.bio2 {
+  margin: 25px auto 0px auto;
+  text-align: left;
+  max-width: 230px;
+
+}
+
+.viewinfo {
+float: left;
+width: 55%;
+box-sizing: border-box;
+margin-left: 30px;
+padding-left: 40px;
+text-align: left;
+border-bottom: solid 2px #dbd77c;
+padding-bottom: 5px;
+
+}
+
+.viewinfo p {
+  margin-top: 40px;
+  font-size: 15px;
+
+}
+
+
+.viewinfo h3 {
+  margin-top: 15px;
+  font-size: 20px;
+
+}
+.content {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.pinlink {
+  width: 35px;
+
+}
+
+.pinlinks {
+  margin-top: 70px;
+
+}
+
+
+.pinlinks li {
+
+  display: inline;
+  text-decoration: none;
+}

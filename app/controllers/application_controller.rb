@@ -4,6 +4,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_filter :setup_devise_params, if: :devise_controller?
 
+  def after_sign_in_path_for(model)
+    pins_path
+  end
+
 protected
 def setup_devise_params
   devise_parameter_sanitizer.for(:sign_up) << [:username, :avatar]

@@ -36,7 +36,7 @@ before_action :correct_user, only: [:edit, :update, :destroy]
     respond_to do |format|
       if @pin.save
         format.html { redirect_to pins_path, notice: 'Pin was successfully created.' }
-        format.json { render :show, status: :created, location: @pin }
+        format.json { render  :show, status: :created, location: @pin }
       else
         format.html { render :new }
         format.json { render json: @pin.errors, status: :unprocessable_entity }
@@ -50,7 +50,7 @@ before_action :correct_user, only: [:edit, :update, :destroy]
     respond_to do |format|
       if @pin.update(pin_params)
         format.html { redirect_to @pin, notice: 'Pin was successfully updated.' }
-        format.json { render :show, status: :ok, location: @pin }
+        format.json { render  :show, status: :ok, location: @pin }
       else
         format.html { render :edit }
         format.json { render json: @pin.errors, status: :unprocessable_entity }

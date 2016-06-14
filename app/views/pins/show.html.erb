@@ -1,11 +1,52 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Description:</strong>
-  <%= @pin.description %>
+
+
+
 </p>
 
-<%= image_tag(@pin.pin_image.url(:medium)) %>
+<div class = "picbackground">
+<%= image_tag(@pin.pin_image.url, :class => "background") %>
+</div>
 
-<%= link_to 'Edit', edit_pin_path(@pin) %> |
-<%= link_to 'Back', pins_path %>
+<div class ="wrap">
+  <div class ="content">
+      <div class = "pinprofile">
+        <h4>View found by</h4>
+        <h3>  <%= @pin.user.username %></h3>
+        <p> <%= image_tag(@pin.user.avatar.url(:medium), :class => "img-circle size5" )%></p>
+
+        <p class = "bio2"><%= @pin.user.bio %></p>
+      </div>
+
+
+      <div class = "viewinfo">
+
+        <!--<%= @pin.title %>-->
+        <h2>Newport Beach, CA </h2>
+        <h3>Coordinates 43.25.46</h3>
+      <p>  <%= @pin.description %></p>
+
+        <div class = "pinlinks">
+          <ul>
+          <li><%= image_tag("_heart.png", :class => "pinlink" )%></li>
+          <li><%= image_tag("_plus.png", :class => "pinlink" )%></li>
+          <li><%= image_tag("_Share.png", :class => "pinlink" )%></li>
+        </ul>
+        </div>
+
+      </div>
+  </div>
+</div>
+
+<!--
+<div class ="links">
+
+  <%= link_to 'Edit', edit_pin_path(@pin) %> |
+    <%= link_to 'Destroy', @pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <%= link_to 'Back', pins_path %>
+
+</div>
+
+-->
