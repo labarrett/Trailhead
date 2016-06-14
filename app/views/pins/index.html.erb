@@ -4,38 +4,33 @@
 </div>
 
 <div class ="wrap">
-
 <div class="row">
   <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
-    <div class="input-group-btn">
-      <!--<span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
-      </span> -->
+    <div class="input-group">
+
       <input type="text" class="form-control" placeholder="Search...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
+
+<div class ="topspace2">
+<div class ="container">
   <div class = "grid row">
-
-
-
-
 
   <% @pins.each do |pin| %>
     <div class = "grid-item col-md-4 col-sm-3 col-xs-12">
 
       <div class = "group">
 
-
-      <div class ="pinimage">
-        <div class ="yellow2">
-           <h4 class ="pindescription">  <%= pin.title %></h4>
-             <%= link_to image_tag(pin.user.avatar.url(:thumb), :class => "img-circle size" ), user_path(pin.user.username)  %>
-
-         </div>
         <%= link_to image_tag(pin.pin_image.url(:medium)), pin %>
 
-      </div>
+          <div class ="newyellow">
+             <h4 class ="pindescription2">  <%= pin.title %></h4>
+            <h4>   <%= link_to image_tag(pin.user.avatar.url(:thumb), :class => "img-circle size6" ), user_path(pin.user.username)  %></h4>
+           </div>
 
 
       </div>
@@ -43,6 +38,8 @@
     </div>
   <% end %>
   </div>
+</div>
+</div>
 
 <div class ="row">
 <div class = "col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3">

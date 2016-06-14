@@ -76,7 +76,7 @@ before_action :correct_user, only: [:edit, :update, :destroy]
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pin_params
-      params.require(:pin).permit(:description, :pin_image)
+      params.require(:pin).permit(:title, :description, :pin_image)
     end
 
     def correct_user

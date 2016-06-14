@@ -31,6 +31,8 @@ h4 {
 
 .new {
   margin-top: 50px;
+  background-color: #e99176;
+  border-color: #e99176
 }
 
 
@@ -118,12 +120,25 @@ font-size: 20px;
   border-radius: 7px;
 
 }
-.darkblue {
+html {
+  position: relative;
+  min-height: 100%;
+}
 
-  padding: 50px;
+body {
+
+  margin-bottom: 180px;
+
+}
+
+.footer {
+
+  position: absolute;
+  bottom: 0;
+  height: 180px;
   width: 100%;
   background-color: #30788b;
-    clear: both;
+
 
 }
 
@@ -236,10 +251,26 @@ position: relative;
 //***Pin Index Page***//
 
 
+.wrap5 {
+
+  width: 80%;
+  margin: 80px auto 100px auto;
+  padding-bottom: 100px;
+
+}
+
+
+.wrap2 {
+
+  width: 80%;
+  margin: 80px auto 100px auto;
+
+}
+
 .wrap {
 
   width: 80%;
-  margin: 80px auto 0 auto;
+  margin: 80px auto 100px auto;
 
 }
 
@@ -266,6 +297,16 @@ position: relative;
 
 }
 
+.color .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+
+  color: #3d424e;
+
+}
+
+
+
+
+
 
 .yellow2 {
 position: absolute;
@@ -274,6 +315,27 @@ height: 45px;
 width: 300px;
 background-color: #dbd77c;
 
+}
+
+
+.newyellow {
+  padding-top: 5px;
+margin-top: -5px;
+width: 300px;
+height: 45px;
+background-color: #dbd77c;
+position: relative;
+
+}
+
+
+.pindescription2 {
+  text-align: left;
+  margin-left: 15px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 18px;
 }
 
 .pindescription {
@@ -292,6 +354,13 @@ background-color: #dbd77c;
   top: 4px;
 }
 
+.size6 {
+  width: 35px;
+  position: absolute;
+  right: 15px;
+  top: 7px;
+
+}
 
 //***********************//
 
@@ -312,7 +381,8 @@ background-color: #dbd77c;
 
 .profile {
 
-  width: 70%;
+padding-top: 20px;
+  width: 100%;
   margin: auto;
   overflow: hidden;
 
@@ -329,20 +399,25 @@ background-color: #dbd77c;
   overflow: hidden;
   width: 50%;
   float: left;
-  margin-left: 20px;
+  margin-left: 25px;
   margin-top: 20px;
 }
 
 .username {
+  text-align: left;
   font-size: 20px;
+  width: 90%;
 text-transform: uppercase;
   float: left;
 }
 
 .userbio {
+
   float:left;
   text-align: left;
   font-size: 15px;
+  width: 70%;
+
 }
 
 
@@ -386,7 +461,7 @@ text-transform: uppercase;
 
 .background {
   width: 100%;
-  margin-top: -120px;
+  margin-top: -20px;
 }
 
 .size5 {
@@ -410,6 +485,18 @@ text-transform: uppercase;
   margin: 25px auto 0px auto;
   text-align: left;
   max-width: 230px;
+  color: #212121;
+
+}
+
+.pincolor {
+  color: #e99176;
+
+}
+
+
+.pincolor2 {
+  color: #9db9c4;
 
 }
 
@@ -457,4 +544,17 @@ padding-bottom: 5px;
 
   display: inline;
   text-decoration: none;
+}
+
+.topspace {
+  margin-top: 20px;
+  margin-bottom: 100px;
+
+}
+
+
+.topspace2 {
+  margin-top: 40px;
+  margin-bottom: 100px;
+
 }

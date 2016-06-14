@@ -10,11 +10,11 @@
 <%= image_tag(@pin.pin_image.url, :class => "background") %>
 </div>
 
-<div class ="wrap">
+<div class ="wrap5">
   <div class ="content">
       <div class = "pinprofile">
-        <h4>View found by</h4>
-        <h3>  <%= @pin.user.username %></h3>
+        <h4 class="pincolor">View found by</h4>
+        <h3 class ="pincolor2">  <%= @pin.user.username %></h3>
         <p> <%= image_tag(@pin.user.avatar.url(:medium), :class => "img-circle size5" )%></p>
 
         <p class = "bio2"><%= @pin.user.bio %></p>
@@ -24,7 +24,7 @@
       <div class = "viewinfo">
 
         <!--<%= @pin.title %>-->
-        <h2>Newport Beach, CA </h2>
+        <h2 class="pincolor"><%= @pin.title %></h2>
         <h3>Coordinates 43.25.46</h3>
       <p>  <%= @pin.description %></p>
 

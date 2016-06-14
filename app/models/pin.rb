@@ -7,4 +7,7 @@ class Pin < ActiveRecord::Base
     validates_attachment_content_type :pin_image, content_type: /\Aimage\/.*\Z/
 
 
+def repost
+end
+
 end

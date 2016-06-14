@@ -8,6 +8,10 @@ class ApplicationController < ActionController::Base
     pins_path
   end
 
+  def after_sign_up_path_for(model)
+    pins_path
+  end
+
 protected
 def setup_devise_params
   devise_parameter_sanitizer.for(:sign_up) << [:username, :avatar]

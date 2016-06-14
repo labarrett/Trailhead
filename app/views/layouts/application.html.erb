@@ -29,9 +29,10 @@
 
          <ul class="nav navbar-nav navbar-right colortwo">
            <% if user_signed_in?%>
-           <li><%= link_to 'Edit Profile',edit_user_registration_path %></li>
+              <li><%= link_to 'Pins', pins_path %></li>
+           <li><%= link_to 'Profile',edit_user_registration_path %></li>
           <li> <%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
-           <li><%= link_to 'Pins', pins_path %></li>
+
 
            <% else %>
            <li><%= link_to 'Login', new_user_session_path %></li>
@@ -41,7 +42,7 @@
        </div>
      </div>
    </nav>
-<p>for test</p>
+
 
 
   <!--<p class="notice"><%= notice %></p>
@@ -50,10 +51,9 @@
 <%= yield %>
 
 
-<footer class ="darkblue">
+<footer class ="footer">
+
 
 </footer>
-
-
 </body>
 </html>
